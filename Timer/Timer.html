@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>タイマー</title>
+    </head>
+    <body>
+        <form>
+            <div class="readme">タイマーをセットしてください</div>
+            <input id="day" type="text" value="">日
+            <input id="hour" type="text" value="">時間
+            <input id="minute" type="text" value="">分
+            <input id="second" type="text" value="">秒<br>
+            <input type="button" value="開始" onclick="Start()">
+            <input type="button" value="停止" onclick="Stop()">
+            <input type="button" value="リセット" onclick="Reset()">
+            <div id="error"></div>
+        </form>
+    </body>
+    <script src="./Timer.js"></script>
+</html>
