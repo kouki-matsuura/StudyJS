@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>電卓</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
+    </head>
+    <body>
+        <h1>電卓</h1>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="calculator col-5 bg-dark">
+                    <div style="height: 100px;">
+                        <div id="answer" class="text-light text-right" style="font-size: 60px">0</div>
+                    </div>
+                    <div class="row text-center" style="height: 400px;">
+                        <div onClick="cancel()" class="col-3 bg-secondary  border border-dark d-flex align-items-center justify-content-center">C</div>
+                        <div onClick="change_code()" class="col-3 bg-secondary  border border-dark d-flex align-items-center justify-content-center">±</div>
+                        <div onClick="per()" class="col-3 bg-secondary  border border-dark d-flex align-items-center justify-content-center">%</div>
+                        <div onClick="divide()" class="col-3 bg-warning  border border-dark d-flex align-items-center justify-content-center">÷</div>
+                        <div onClick="add(7)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">7</div>
+                        <div onClick="add(8)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">8</div>
+                        <div onClick="add(9)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">9</div>
+                        <div onClick="multiplicate()" class="col-3 bg-warning  border border-dark d-flex align-items-center justify-content-center">×</div>
+                        <div onClick="add(4)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">4</div>
+                        <div onClick="add(5)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">5</div>
+                        <div onClick="add(6)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">6</div>
+                        <div onClick="subtract()" class="col-3 bg-warning  border border-dark d-flex align-items-center justify-content-center">-</div>
+                        <div onClick="add(1)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">1</div>
+                        <div onClick="add(2)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">2</div>
+                        <div onClick="add(3)" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">3</div>
+                        <div onClick="addition()" class="col-3 bg-warning  border border-dark d-flex align-items-center justify-content-center">+</div>
+                        <div onClick="add(0)" class="col-6  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">0</div>
+                        <div onClick="addpoint()" class="col-3  border border-dark d-flex align-items-center justify-content-center" style="background-color: darkgray;">.</div>
+                        <div onClick="formulaCheck()"class="col-3 bg-warning  border border-dark d-flex align-items-center justify-content-center">=</div> 
+                    </div>         
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="Calculator.js"></script>
+    </body>
+</html>
